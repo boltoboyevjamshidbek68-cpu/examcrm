@@ -1,0 +1,16 @@
+
+Added modules:
+ - invoices (entity, service, controller, module)
+ - dashboard (service, controller, module)
+ - notifications (telegram service + module)
+
+Modified:
+ - src/app.module.ts -> now uses entities glob and imports new modules
+ - package.json -> added node-telegram-bot-api dependency
+
+Next steps for you:
+ - Run `npm install` in project root to install new dependency.
+ - Add TELEGRAM_BOT_TOKEN and optionally TELEGRAM_POLLING=false and TELEGRAM_ADMIN_ID to your .env
+ - Restart the Nest server. Telegram bot will start if token provided.
+
+If you want, I can also create an endpoint to send messages to admin via Telegram service.
